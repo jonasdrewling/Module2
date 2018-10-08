@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Funkis';
+  src: url('FunkisMAUDemoGX.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Funkis', sans-serif;
+  padding: 0;
+  padding-top: 1em;
+  height: 100%;
+}
+
+#watchme {
+  font-family: 'Funkis';
+    font-variation-settings: 'wght' 200, 'wdth' 1;
+    font-size: 6em;
+    text-transform: lowercase;
+    text-align: center;
+    text-rendering: geometricPrecision;
+  position: absolute;
+  left: 900px;
+  top: 20px;
+
+  animation-name: weightAnim;
+    animation-duration: 1000ms;
+    animation-delay: 10ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+#watchme:hover {
+  animation-name:slidein;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-iteration-count: infinity;
+  animation-direction: alternate;
+  
+}
+
+#watchme:active {
+  animation-name: slideover;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+
+@keyframes weightAnim{
+  0% {
+      font-variation-settings: "wght" 50;
+  }
+  100% {
+      font-variation-settings: "wght" 200;
+  }
+}
+
+@keyframes slidein {
+  from {left: 900px;}
+  to {left:800px;}
+}
+
+@-moz-keyframes slidein {
+  from {left: 900px;}
+  to {left:800px;}
+}
+
+@-webkit-keyframes slidein {
+  from {left: 900px;}
+  to {left:800px;}
+}
+
+@keyframes slideover {
+  from {left: 900px;}
+  to {left: 10px;}
+}
+
+.slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-delay: 1s;
+    animation-iteration-count: infinity;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    
+  }
+
+.slideover {
+  animation-duration: 3s;
+  animation-name: slideover;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+  

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Funkis';
+  src: url('FunkisMAUDemoGX.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Funkis', sans-serif;
+  background-color: whitesmoke;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  color: darkgrey;
+}
+a, a:link, a:visited {
+  color: grey;;
+}
+a:hover {
+  color: black;
+}
