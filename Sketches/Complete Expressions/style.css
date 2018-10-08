@@ -25,6 +25,6 @@ h1 {
   text-align: right;
   text-rendering: geometricPrecision;
   font-size: 4em;
-  font-variation-settings: "wght" 200, "wdth" 1;
+  font-variation-settings: "wght" 200, "wdth" 0;
   text-shadow: 0 0;
 }
