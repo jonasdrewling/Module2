@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Funkis';
+    src: url('FunkisMAUDemoGX.ttf');
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Funkis', sans-serif;
+    padding: 0;
+    padding-top: 1em;
+    height: 100%;
+  }
+
+.letters {
+    font-family: 'Funkis';
+    font-variation-settings: 'term' 100, 'wdth' 0, 'wght' 50;
+    text-shadow: 0 0;
+    font-size: 6em;
+    text-transform: lowercase;
+    text-align: center;
+    text-rendering: geometricPrecision;
+  position: absolute;
+  left: 500px;
+  top: 20px;
+
+  animation-name: long;
+  animation-duration: 2000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateText
+{
+    from   {transform: rotate(0deg); }
+    /*50%  {transform: rotate(-180deg);}*/
+    to {transform: rotate(360deg);}
+}
+
+.letters:hover > span {
+    text-rendering: geometricPrecision;
+    
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50;
+    letter-spacing: 0.2em;
+    animation-name: rotateText;    
+    display: inline-block;/*inline-block; */
+    animation-duration: 1s;  
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes long {
+  0% {
+    font-variation-settings: "term" 100, 'wdth' 0, 'wght' 50;
+  }
+  100% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50;
+  }
+}
+
