@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Funkis';
+    src: url('FunkisMAUDemoGX.ttf');
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Funkis', sans-serif;
+    padding: 0;
+    padding-top: 1em;
+    height: 100%;
+  }
+
+
+.flash {
+    font-family: 'Funkis';
+    font-variation-settings: 'wght' 200, 'wdth' 1;
+    font-size: 6em;
+    text-align: right;
+    text-rendering: geometricPrecision;
+    position: absolute;
+    left: 900px;
+    top: 20px;
+    /*animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-play-state: running;*/
+
+    animation-name: weightAnim;
+    animation-duration: 1000ms;
+    animation-delay: 10ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes weightAnim {
+    0% {
+        font-variation-settings: "wght" 50;
+    }
+    100% {
+        font-variation-settings: "wght" 200;
+    }
+}
+.flash:hover {
+    animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-play-state: running;
+
+    animation-name: fadein;
+    animation-delay: 0.2s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+
+}
+@keyframes flash {
+    from {color: grey;
+        opacity: 0;}
+    to {color: black;
+        opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
