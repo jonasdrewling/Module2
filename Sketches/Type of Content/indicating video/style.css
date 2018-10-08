@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Funkis';
+    src: url('FunkisMAUDemoGX.ttf');
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Funkis', sans-serif;
+    padding: 0;
+    padding-top: 1em;
+    height: 100%;
+  }
+
+.letters {
+    font-family: 'Funkis';
+    font-variation-settings: 'wght' 200, 'wdth' 1;
+    font-size: 6em;
+    text-transform: lowercase;
+    text-align: center;
+    text-rendering: geometricPrecision;
+  position: absolute;
+  left: 900px;
+  top: 20px;
+}
+
+@keyframes rotateText
+{
+    from   {transform: rotate(0deg); }
+    /*50%  {transform: rotate(-180deg);}*/
+    to {transform: rotate(360deg);}
+}
+
+.letters:hover > span {
+    letter-spacing: 0.2em;
+    animation-name: rotateText;    
+    display: inline-flex;/*inline-block; */
+    animation-duration: 3s;  
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
