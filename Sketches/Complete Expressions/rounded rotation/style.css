@@ -30,23 +30,25 @@
   animation-duration: 2000ms;
   animation-delay: 10ms;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
 
 @keyframes rotateText
 {
-    from   {transform: rotate(0deg); }
+    from   {transform: rotate(0deg);
+        transform-origin: center; }
     /*50%  {transform: rotate(-180deg);}*/
-    to {transform: rotate(360deg);}
+    to {transform: rotate(360deg);
+        transform-origin: center;}
 }
 
 .letters:hover > span {
     text-rendering: geometricPrecision;
     
     font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50;
-    letter-spacing: 0.2em;
+    /*letter-spacing: 0.2em;*/
     animation-name: rotateText;    
     display: inline-block;/*inline-block; */
     animation-duration: 1s;  
