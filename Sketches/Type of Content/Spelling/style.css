@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Funkis";
+  src: url("../Fonts/FunkisMAUDemoGX.ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 1em;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* The style for the standard div */
+
+#theText {
+  font-family: "Funkis", sans-serif;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 5em;
+  text-rendering: geometricPrecision;
+  font-variation-settings: 'wght' 50;
+  text-shadow: 0 0;
+  /* a hack needed to improve rendering */
+}
+
+/* #spelling {
+  animation-name: heavy;
+  animation-duration: 5000ms;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heavy {
+  0% {
+    font-variation-settings: "wght" 50;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+  }
+} */
