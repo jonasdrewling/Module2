@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Funkis";
+  src: url("../Fonts/FunkisMAUDemoGX.ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: whitesmoke;
+  margin: 1em;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  font-family: "Funkis", sans-serif;
+}
+
+/* The style for the standard div */
+#theText {
+  font-family: "Funkis", sans-serif;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 3em;
+  text-rendering: geometricPrecision;
+  font-variation-settings: 'term' 100, 'wdth' 0, 'wght' 50, 'dots' 0, 'shrp' 0;
+  text-shadow: 0 0;
+  /* a hack needed to improve rendering */
+}
+
+/* Dots - ALWAYS*/
+#animDots {
+  animation-name: overHere;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overHere {
+  0% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50, 'dots' 0, 'shrp' 0;
+  }
+  100% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50, 'dots' 100, 'shrp' 0;
+  }
+}
+
+/* Sharpness - ALWAYS*/
+#animShrp {
+  animation-name: overHere2;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overHere2 {
+  0% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50, 'dots' 0, 'shrp' 0;
+  }
+  100% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50, 'dots' 0, 'shrp' 100;
+  }
+}
+
+/* Dots - ALWAYS*/
+#animDots:hover {
+  animation-name: overHere3;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overHere3 {
+  0% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50, 'dots' 0, 'shrp' 0;
+  }
+  100% {
+    font-variation-settings: "term" 0, 'wdth' 0, 'wght' 50, 'dots' 100, 'shrp' 100;
+  }
+}

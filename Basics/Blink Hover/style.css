@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Funkis';
+  src: url('FunkisMAUDemoGX.ttf');  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 1em;
+  height: 100%;
+  font-family: 'Funkis',sans-serif;
+}
+
+#basic {
+  font-family: 'Funkis', sans-serif;
+  text-rendering: geometricPrecision;
+  font-size: 10em;
+  font-variation-settings: 'wght' 200, 'wdth' 1;
+  text-shadow: 0 0;
+}

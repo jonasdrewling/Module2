@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Funkis";
+  src: url("../Fonts/FunkisMAUDemoGX.ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 1em;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  font-family: "Funkis", sans-serif;
+  padding-bottom: 100px;
+}
+
+/* The style for the standard div */
+
+#theText {
+  font-family: "Funkis", sans-serif;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 2em;
+  text-rendering: geometricPrecision;
+  font-variation-settings: 'wght' 50;
+  text-shadow: 0 0;
+  /* a hack needed to improve rendering */
+}
+
+/* Weight only - SLOW */
+
+#animWghtOnly:hover {
+  animation-name: heavy;
+  animation-duration: 5000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heavy {
+  0% {
+    font-variation-settings: "wght" 50;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+  }
+}
+
+/* Weight only - SLOW */
+
+#animWghtOnlyFast:hover {
+  animation-name: heavyAndFast;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heavyAndFast {
+  0% {
+    font-variation-settings: "wght" 50;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+  }
+}
+
+/* Size and weight */
+
+#animWghtAndSize:hover {
+  animation-name: heavyAndBig;
+  animation-duration: 5000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heavyAndBig {
+  0% {
+    font-variation-settings: "wght" 50;
+    font-size: 1em;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+    font-size: 2em;
+  }
+}
+
+/* Incemetal Growth - WEIGHT ONLY */
+
+#mushroomHeavy:hover {
+  animation-name: incrementalWeight;
+  animation-duration: 3000ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes incrementalWeight {
+  0% {
+    font-variation-settings: "wght" 50;
+  }
+  20% {
+    font-variation-settings: "wght" 100;
+  }
+  40% {
+    font-variation-settings: "wght" 75;
+  }
+  60% {
+    font-variation-settings: "wght" 150;
+  }
+  80% {
+    font-variation-settings: "wght" 125;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+  }
+}
+
+/* Incremental Growth - WEIGHT AND SIZE */
+
+#mushroom:hover {
+  animation-name: incremental;
+  animation-duration: 6500ms;
+  animation-delay: 5ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes incremental {
+  0% {
+    font-variation-settings: "wght" 50;
+    font-size: 1em;
+  }
+  20% {
+    font-variation-settings: "wght" 90;
+    font-size: 1.3em;
+  }
+  40% {
+    font-variation-settings: "wght" 75;
+    font-size: 1.2em;
+  }
+  60% {
+    font-variation-settings: "wght" 125;
+    font-size: 1.4em;
+  }
+  80% {
+    font-variation-settings: "wght" 115;
+    font-size: 1.3em;
+  }
+  100% {
+    font-variation-settings: "wght" 150;
+    font-size: 1.5em;
+  }
+}
