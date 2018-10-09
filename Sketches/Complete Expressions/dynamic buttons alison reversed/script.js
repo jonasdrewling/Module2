@@ -12,7 +12,7 @@ function onDocumentReady() {
     document.getElementById('button4').addEventListener('pointerover', onPointer4Over);
 }
 
-function onPointerOver() {
+function onPointer3Over() {
 let el = document.getElementById('pangram');
 const keyframes = [
     {fontVariationSettings: "'term' 0, 'wght' 0",
@@ -44,7 +44,7 @@ function onPointer2Over() {
     let player = el.animate(keyframes, options);
     players.push(player);
 }
-function onPointer3Over() {
+function onPointerOver() {
     let el = document.getElementById('pangram');
     const keyframes = [
         {fontVariationSettings: "'term' 100, 'wght' 0",
