@@ -13,10 +13,18 @@ body {
 h1 {
   color: hotpink;
   text-align: center;
+  padding-bottom: 100px;
 }
+
+h2 {
+  color: hotpink;
+  text-align: left;
+}
+
 a, a:link, a:visited {
   color: hotpink;
 }
+
 a:hover {
   color: red;
 }
