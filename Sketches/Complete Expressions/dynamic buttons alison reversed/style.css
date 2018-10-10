@@ -1,81 +1,76 @@
 @font-face {
-    font-family: 'Funkis';
-    src: url('../Fonts/FunkisMAUDemoGX.ttf');
-  }
-  
-  html {
-    box-sizing: border-box;
-    height: 100%;
-  }
-  html,
-  body {
-    padding: 0;
-    margin: 1em;
-    height: 100%;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  font-family: 'Funkis';
+  src: url('../Fonts/FunkisMAUDemoGX.ttf');
+}
 
-  #button1 {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    margin-left: -400px;
-    
-    background: transparent;
-    /*border: none !important;
-    font-size:0;*/
-  }
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+html,
+body {
+  padding: 0;
+  margin: 1em;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  #button2 {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 400px;
-    width: 200px;
-    height: 100px;
-    /*background: transparent;
-    border: none !important;*/
-  }
+#buttonLeft {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-left: -8%;
+  
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
 
-  #button3 {
-    position: absolute;
-    margin-left: 500px;
-    width: 200px;
-    height: 200px;
-    /*background: transparent;
-    border: none !important;*/
-  
-  }
+#buttonTop {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 39%;
+  width: 403px;
+  height: 100px;
+  background: transparent;
+  border: none !important;
+}
 
-  #button4 {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    margin-top: 200px;
-    margin-left: 400px;
-    /*background: transparent;
-    border: none !important;*/
-  }
-  
-  #container {
-    position: absolute;
-    margin-top: 50px;
-    margin-bottom: -250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  #pangram {
-    font-variation-settings: 'wght' 50;
-    font-size: 6em;
-    font-family: 'Funkis';
-    text-rendering: geometricPrecision;
-    /*font-size: 4em;*/
-    text-shadow: 0 0; /* a hack needed to improve rendering */
-  }
+#buttonRight {
+  position: absolute;
+  margin-left: 8%;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: none !important;
+
+}
+
+#buttonBottom {
+  position: relative;
+  width: 403px;
+  height: 100px;
+  margin-left: 39%;
+  background: transparent;
+  border: none !important; 
+}
+
+#container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pangram {
+  font-variation-settings: 'wght' 50;
+  font-size: 6em;
+  font-family: 'Funkis';
+  text-rendering: geometricPrecision;
+  /*font-size: 4em;*/
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+}

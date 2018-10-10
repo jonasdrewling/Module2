@@ -4,25 +4,25 @@ function onDocumentReady() {
     //document
     //.getElementById('button1')
     //.addEventListener('click', onButton1Click);
-    document.getElementById('button1').addEventListener('pointerover', onPointerOver);
+    document.getElementById('buttonLeft').addEventListener('pointerover', onPointerOver);
     //document.getElementById('button2').addEventListener('click', onButton2Click);
     //document.getElementById('button3').addEventListener('pointerdown', onButton3PointerDown);
-    document.getElementById('button2').addEventListener('pointerover', onPointer2Over);
-    document.getElementById('button3').addEventListener('pointerover', onPointer3Over);
-    document.getElementById('button4').addEventListener('pointerover', onPointer4Over);
+    document.getElementById('buttonTop').addEventListener('pointerover', onPointer2Over);
+    document.getElementById('buttonRight').addEventListener('pointerover', onPointer3Over);
+    document.getElementById('buttonBottom').addEventListener('pointerover', onPointer4Over);
 }
 
-function onPointerOver() {
+function onPointer3Over() {
 let el = document.getElementById('pangram');
 const keyframes = [
-    {fontVariationSettings: "'term' 0, 'wght' 0",
+    {fontVariationSettings: "'term' 0, 'wght' ",
 letterSpacing: 'inherit'},
-    {fontVariationSettings: "'term' 100, 'wght' 0",
-letterSpacing: '50px'}
+    {fontVariationSettings: "'term' 100, 'wght' ",
+letterSpacing: '30px'}
 ];
 const options = {
     fill: 'forwards',
-    duration: 3000,
+    duration: 1000,
     easing: 'ease-out'
 };
 
@@ -30,7 +30,7 @@ let player = el.animate(keyframes, options);
 players.push(player);
 }
 
-function onPointer2Over() {
+function onPointer4Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
         {fontVariationSettings: "'wght' 50"},
@@ -38,39 +38,40 @@ function onPointer2Over() {
     ];
     const options = {
         fill: 'forwards',
-        duration: 3000,
+        duration: 1000,
         easing: 'ease-out'
     };
     let player = el.animate(keyframes, options);
     players.push(player);
 }
-function onPointer3Over() {
+function onPointerOver() {
     let el = document.getElementById('pangram');
     const keyframes = [
-        {fontVariationSettings: "'term' 100, 'wght' 0",
-    letterSpacing: '50px'},
-        {fontVariationSettings: "'term' 0, 'wght' 0",
+        {fontVariationSettings: "'term' 100, 'wght'",
+    letterSpacing: '30px'},
+        {fontVariationSettings: "'term' 0, 'wght'",
     letterSpacing: 'inherit'}
     ];
     const options = {
         fill: 'forwards',
-        duration: 3000,
+        duration: 1000,
         easing: 'ease-out'
     };
 
     let player = el.animate(keyframes, options);
     players.push(player);
 }
-function onPointer4Over() {
+function onPointer2Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
-        {fontVariationSettings:"'wght' 200"},
+        {fontVariationSettings: "'wght' 200"},
         {fontVariationSettings: "'wght' 50"}
     ];
     const options = {
         fill: 'forwards',
-        duration: 3000,
+        duration: 1000,
         easing: 'ease-out',
+        /*direction: 'alternate-reverse'*/
     };
 
     let player = el.animate(keyframes, options);
