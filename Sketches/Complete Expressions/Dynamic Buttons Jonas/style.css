@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Funkis';
+  src: url('../Fonts/FunkisMAUDemoGX.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 1em;
+  height: 100%;
+  background-color: rgb(252, 232, 196);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ----------DIVS---------- */
+
+.commonDiv {
+  font-family: 'Funkis', sans-serif;
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+/* ----------ANIMATION OPTIONS---------- */
+
+#pangram {
+  text-rendering: geometricPrecision;
+  font-variation-settings: 'wght' 50;
+  /* a hack needed to improve rendering */
+  text-shadow: 0 0;
+}
+
+/* ----------BUTTONS---------- */
+
+#butt1, #butt2 {
+  margin-right: 1em;
+  height: 50px;
+  width: 50px;
+}
