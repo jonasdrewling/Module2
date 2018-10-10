@@ -41,8 +41,6 @@ html, body {
   grid-column-end: 3;
   grid-column-start: 1;
   grid-column-end: 4;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
 }
 
 #gridItemLeft {
@@ -50,8 +48,6 @@ html, body {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
 }
 
 #gridItemRight {
@@ -59,21 +55,14 @@ html, body {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
 }
 
 #gridItemMiddle {
-  font-family: 'Funkis';
-  font-variation-settings: 'wght' 50;
-  font-size: 3em;
   text-align: center;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
 }
 
 #gridItemBottom {
@@ -81,22 +70,20 @@ html, body {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 4;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
 }
 
 .gridItemArch {
   grid-row-start: 1;
   grid-row-end: 2;
-  grid-column-start: 8;
-  grid-column-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .gridItemStar {
   grid-row-start: 1;
   grid-row-end: 2;
-  grid-column-start: 7;
-  grid-column-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 
@@ -105,7 +92,7 @@ html, body {
 #pangram {
   font-variation-settings: 'wght' 50;
   text-align: right;
-  font-size: 3em;
+  font-size: 1.2em;
   font-family: 'Funkis';
   text-rendering: geometricPrecision;
   /*font-size: 4em;*/
@@ -115,7 +102,7 @@ html, body {
 #pangram2 {
   font-variation-settings: 'wght' 50;
   text-align: right;
-  font-size: 3em;
+  font-size: 1.2em;
   font-family: 'Funkis';
   text-rendering: geometricPrecision;
   /*font-size: 4em;*/
