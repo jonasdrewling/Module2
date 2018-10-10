@@ -20,49 +20,49 @@
   }
 
   #button1 {
-    width: 600px;
+    width: 200px;
     height: 200px;
     position: absolute;
     margin-left: -400px;
     
     background: transparent;
-    border: none !important;
-    font-size:0;
+    /*border: none !important;
+    font-size:0;*/
   }
 
   #button2 {
-    position: relative;
+    position: absolute;
     margin-top: 10px;
-    margin-left: 10px;
-    width: 1200px;
+    margin-left: 400px;
+    width: 200px;
     height: 100px;
-    background: transparent;
-    border: none !important;
+    /*background: transparent;
+    border: none !important;*/
   }
 
   #button3 {
     position: absolute;
     margin-left: 500px;
-    width: 600px;
+    width: 200px;
     height: 200px;
-    background: transparent;
-    border: none !important;
+    /*background: transparent;
+    border: none !important;*/
   
   }
 
   #button4 {
-    position: relative;
-    width: 1200px;
-    height: 200px;
-    margin-top: 100px;
-    margin-left: 10px;
-    background: transparent;
-    border: none !important;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 400px;
+    /*background: transparent;
+    border: none !important;*/
   }
   
   #container {
     position: absolute;
-    margin-top: -250px;
+    margin-top: 50px;
     margin-bottom: -250px;
     display: flex;
     align-items: center;

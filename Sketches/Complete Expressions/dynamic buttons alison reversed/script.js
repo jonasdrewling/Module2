@@ -12,7 +12,7 @@ function onDocumentReady() {
     document.getElementById('button4').addEventListener('pointerover', onPointer4Over);
 }
 
-function onPointer3Over() {
+function onPointerOver() {
 let el = document.getElementById('pangram');
 const keyframes = [
     {fontVariationSettings: "'term' 0, 'wght' 0",
@@ -33,8 +33,8 @@ players.push(player);
 function onPointer2Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
-        {fontSize: '6em'},
-        {fontSize: '8em'}
+        {fontVariationSettings: "'wght' 50"},
+        {fontVariationSettings: "'wght' 200"}
     ];
     const options = {
         fill: 'forwards',
@@ -44,7 +44,7 @@ function onPointer2Over() {
     let player = el.animate(keyframes, options);
     players.push(player);
 }
-function onPointerOver() {
+function onPointer3Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
         {fontVariationSettings: "'term' 100, 'wght' 0",
@@ -64,15 +64,13 @@ function onPointerOver() {
 function onPointer4Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
-        {fontSize: '6em'},
-        {fontSize: '8em'},
-        {fontSize: '6em'}
+        {fontVariationSettings:"'wght' 200"},
+        {fontVariationSettings: "'wght' 50"}
     ];
     const options = {
         fill: 'forwards',
         duration: 3000,
         easing: 'ease-out',
-        direction: 'alternate-reverse'
     };
 
     let player = el.animate(keyframes, options);
