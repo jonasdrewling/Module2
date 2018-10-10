@@ -22,7 +22,7 @@ html, body {
 
 .gridDiv1 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto ;
   background-color: #2196F3;
   padding: 10px;
 }
@@ -37,14 +37,14 @@ html, body {
 
 /* ----------GRID ITEMS---------- */
 
-.gridItemTop {
+#gridItemTop {
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.gridItemLeft {
+#gridItemLeft {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -53,7 +53,7 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.gridItemRight {
+#gridItemRight {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 3;
@@ -62,7 +62,7 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.gridItemMiddle {
+#gridItemMiddle {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -71,7 +71,7 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.gridItemBottom {
+#gridItemBottom {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
@@ -80,20 +80,31 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.gridItemText {
+.gridItemArch {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 8;
+  grid-column-end: 9;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-/* ----------KEYFRAME TRIGGERS---------- */
-
+.gridItemStar {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
 
 
 /* ----------VARIABLE FONT---------- */
 
 #pangram {
+  font-variation-settings: 'wght' 50;
   text-align: right;
-  font-size: 6em;
+  font-size: 3em;
   font-family: 'Funkis';
   text-rendering: geometricPrecision;
   /*font-size: 4em;*/
@@ -101,8 +112,9 @@ html, body {
 }
 
 #pangram2 {
+  font-variation-settings: 'wght' 50;
   text-align: right;
-  font-size: 6em;
+  font-size: 3em;
   font-family: 'Funkis';
   text-rendering: geometricPrecision;
   /*font-size: 4em;*/
