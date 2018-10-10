@@ -41,6 +41,8 @@ html, body {
   grid-column-end: 3;
   grid-column-start: 1;
   grid-column-end: 4;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
 }
 
 #gridItemLeft {
@@ -48,6 +50,8 @@ html, body {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
 }
 
 #gridItemRight {
@@ -55,6 +59,8 @@ html, body {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
 }
 
 #gridItemMiddle {
@@ -66,6 +72,8 @@ html, body {
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
 }
 
 #gridItemBottom {
@@ -73,6 +81,8 @@ html, body {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 4;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
 }
 
 .gridItemArch {
