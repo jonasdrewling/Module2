@@ -1,67 +1,166 @@
-var players = []; // Keep track of infinite animations
+var players = [];
 
 function onDocumentReady() {
-  document
-    .getElementById('butt1')
-    .addEventListener('click', onAnimateSkld);
-  document
-    .getElementById('butt2')
-    .addEventListener('click', onSetBldb);
+    //document
+    //.getElementById('button1')
+    //.addEventListener('click', onButton1Click);
+    document.getElementById('buttonLeft').addEventListener('pointerover', onPointerOver);
+    //document.getElementById('button2').addEventListener('click', onButton2Click);
+    //document.getElementById('button3').addEventListener('pointerdown', onButton3PointerDown);
+    document.getElementById('buttonTop').addEventListener('pointerover', onPointer2Over);
+    document.getElementById('buttonRight').addEventListener('pointerover', onPointer3Over);
+    document.getElementById('buttonBottom').addEventListener('pointerover', onPointer4Over);
 }
 
-function onSetBldb() {
-  // Axis
-  // BLDB: Worm (0..1000)
-
-  let el = document.getElementById('pangram');
-  el.style.fontVariationSettings = '\'BLDB\' 1000';
-
-  // We need to cancel any existing animations
-  // since they will override the style
-  cancelAnimation();
-}
-
-// Cancels all infinite animations
-function cancelAnimation() {
-  players.forEach(p => {
-    p.cancel();
-  });
-  players = [];
-}
-
-function onAnimateSkld() {
-  // Axis
-  // SKLD: Stripes (0..1000)
-
-  // Two keyframes: beginning and end
-  const keyframes = [
-    // Start at 0 for SKLD
-    { fontVariationSettings: "'wght' 50" },
-
-    // End at 1000 for SKLD
-    { fontVariationSettings: "'wght' 200" }
-  ];
-
-  const options = {
-    delay: 100,
-    // fill forwards keeps the property to be the same
-    // as last keyframe
+function onPointerOver() {
+let el = document.getElementById('pangram');
+const keyframes = [
+    {fontVariationSettings: "'term' 0, 'wght' 50"},
+    {fontVariationSettings: "'term' 0, 'wght' 200"}
+];
+const options = {
     fill: 'forwards',
-    duration: 700,
-    easing: 'ease-in-out'
-  };
+    duration: 1000,
+    easing: 'ease-out'
+};
 
-  let el = document.getElementById('pangram');
-
-  // Animate!
-  let player = el.animate(keyframes, options);
-
-  // Keep track of animation since it runs forever
-  players.push(player);
+let player = el.animate(keyframes, options);
+players.push(player);
 }
 
+function onPointer2Over() {
+    let el = document.getElementById('pangram');
+    const keyframes = [
+        {fontSize: '6em'},
+        {fontSize: '8em'}
+    ];
+    const options = {
+        fill: 'forwards',
+        duration: 3000,
+        easing: 'ease-out'
+    };
+    let player = el.animate(keyframes, options);
+    players.push(player);
+}
+function onPointer3Over() {
+    let el = document.getElementById('pangram');
+    const keyframes = [
+        {fontVariationSettings: "'term' 100, 'wght' 0",
+    letterSpacing: '50px'},
+        {fontVariationSettings: "'term' 0, 'wght' 0",
+    letterSpacing: 'inherit'}
+    ];
+    const options = {
+        fill: 'forwards',
+        duration: 3000,
+        easing: 'ease-out'
+    };
+
+    let player = el.animate(keyframes, options);
+    players.push(player);
+}
+function onPointer4Over() {
+    let el = document.getElementById('pangram');
+    const keyframes = [
+        {fontSize: '6em'},
+        {fontSize: '8em'},
+        {fontSize: '6em'}
+    ];
+    const options = {
+        fill: 'forwards',
+        duration: 3000,
+        easing: 'ease-out',
+        direction: 'alternate-reverse'
+    };
+
+    let player = el.animate(keyframes, options);
+    players.push(player);
+}
+/*function onButton1Click() {
+    let el = document.getElementById('pangram');
+    const keyframes = [
+        {fontVariationSettings: "'term' 0, 'shrp' 1, 'wght' 50"},
+        {fontVariationSettings: "'term' 100, 'shrp' 100, 'wght' 50"}
+    ];
+    const options = {
+        fill: 'forwards',
+        duration: 6000,
+        easing: 'ease-in-out',
+        timing: 'alternate-reverse',
+        iteration: 'infinite'
+    };
+    let player = el.animate(keyframes, options);
+    players.push(player);
+    //el.style.fontVariationSettings = '\'WDTH\' 100';
+    //cancelAnimation();
+}
+
+/*function cancelAnimation() {
+    players.forEach(p => {
+        p.cancel();
+    });
+    players = [];
+}*/
+
+/*function onButton2Click() {
+    let el = document.getElementById('pangram');
+    const keyframes = [
+        {fontStyle: 'normal'},
+        {fontStyle: 'italic'}
+       /*{ /*fontVariationSettings: "'wght' 50, 'term' 0" },
+       { fontVariationSettings: "'wght' 200, 'term' 0" }*/
+   /* ];
+    const options = {
+       
+        //delay: 100,
+        fill: 'forwards',
+        duration: 3000,
+        iteration: 'infinite',
+        timing: 'alternate-reverse',
+        easing: 'ease-in-out'
+    };
+    
+
+    let player = el.animate(keyframes, options);
+    
+    players.push(player);
+   
+}*/
+
+/*function onButton3PointerDown(button3, action, start, speedup) {
+    let el = document.getElementById('pangram');
+    var t;
+    /*var repeat = function () {
+        action();
+        t = setTimeout(repeat, start);
+        start = start / speedup;
+    }
+    button3.pointerdown = function() {
+        repeat();
+    }
+    button3.pointerup = function() {
+        clearTiemout(t);
+    }*/
+
+    /*const keyframes = [
+        {fontVariationSettings: "'term' 0, 'wdth' 0, 'wght' 0"},
+        {fontVariationSettings: "'term' 100, 'wdth' 100, 'wght' 0"}
+    ];
+    const options = {
+        duration: 3000,
+        iteration: 'infinite',
+        timing: 'alternate',
+        easing: 'ease-in-out'
+    };
+
+    let player = el.animate(keyframes, options);
+    players.push(player);
+    cancelAnimation();
+    
+    //onButton3PointerDown(button3, function () {}, 1000, 2);
+}*/
 if (document.readyState != 'loading') {
-  onDocumentReady();
+    onDocumentReady();
 } else {
-  document.addEventListener('DOMContentLoaded', onDocumentReady);
+    document.addEventListener('DOMContentLoaded', onDocumentReady);
 }
