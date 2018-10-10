@@ -12,6 +12,7 @@ html, body {
   padding: 0;
   margin: 1em;
   height: 100%;
+  background-color: antiquewhite
 }
 
 *, *:before, *:after {
@@ -23,15 +24,13 @@ html, body {
 .gridDiv1 {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto ;
-  background-color: #2196F3;
   padding: 10px;
 }
 
 .gridDiv2 {
   display: grid;
-  grid-template-columns: 5em 5em 5em;
-  grid-template-rows: 5em 5em 5em;
-  background-color: #2196F3;
+  grid-template-columns: 10em 10em 10em;
+  grid-template-rows: 10em 5em 10em;
   padding: 10px;
 }
 
@@ -42,6 +41,7 @@ html, body {
   grid-column-end: 3;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
+  border-bottom: rgba(255, 255, 255, 0.8);
 }
 
 #gridItemLeft {
@@ -51,6 +51,7 @@ html, body {
   grid-column-end: 2;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
+  border-right: rgba(255, 255, 255, 0.8);
 }
 
 #gridItemRight {
@@ -60,6 +61,7 @@ html, body {
   grid-column-end: 4;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
+  border-left: rgba(255, 255, 255, 0.8);
 }
 
 #gridItemMiddle {
@@ -68,7 +70,6 @@ html, body {
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 #gridItemBottom {
@@ -78,6 +79,7 @@ html, body {
   grid-column-end: 3;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
+  border-top: rgba(255, 255, 255, 0.8);
 }
 
 .gridItemArch {
@@ -85,8 +87,6 @@ html, body {
   grid-row-end: 2;
   grid-column-start: 8;
   grid-column-end: 9;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .gridItemStar {
@@ -94,8 +94,6 @@ html, body {
   grid-row-end: 2;
   grid-column-start: 7;
   grid-column-end: 8;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 
@@ -112,6 +110,16 @@ html, body {
 }
 
 #pangram2 {
+  font-variation-settings: 'wght' 50;
+  text-align: right;
+  font-size: 3em;
+  font-family: 'Funkis';
+  text-rendering: geometricPrecision;
+  /*font-size: 4em;*/
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+}
+
+#email {
   font-variation-settings: 'wght' 50;
   text-align: right;
   font-size: 3em;
