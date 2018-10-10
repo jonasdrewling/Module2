@@ -15,14 +15,14 @@ function onDocumentReady() {
 function onPointerOver() {
 let el = document.getElementById('pangram');
 const keyframes = [
-    {fontVariationSettings: "'term' 0, 'wght'",
+    {fontVariationSettings: "'wght' 50, 'term' 0",
 letterSpacing: 'inherit'},
-    {fontVariationSettings: "'term' 100, 'wght'",
+    {fontVariationSettings: "'wght' 50, 'term' 100",
 letterSpacing: '30px'}
 ];
 const options = {
     fill: 'forwards',
-    duration: 1000,
+    duration: 500,
     easing: 'ease-out'
 };
 
@@ -38,7 +38,7 @@ function onPointer2Over() {
     ];
     const options = {
         fill: 'forwards',
-        duration: 1000,
+        duration: 500,
         easing: 'ease-out'
     };
     let player = el.animate(keyframes, options);
@@ -47,14 +47,14 @@ function onPointer2Over() {
 function onPointer3Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
-        {fontVariationSettings: "'term' 100, 'wght'",
+        {fontVariationSettings: "'wght' 50, 'term' 100",
     letterSpacing: '30px'},
-        {fontVariationSettings: "'term' 0, 'wght'",
+        {fontVariationSettings: "'wght' 50, 'term' 0",
     letterSpacing: 'inherit'}
     ];
     const options = {
         fill: 'forwards',
-        duration: 1000,
+        duration: 500,
         easing: 'ease-out'
     };
 
@@ -69,7 +69,7 @@ function onPointer4Over() {
     ];
     const options = {
         fill: 'forwards',
-        duration: 1000,
+        duration: 500,
         easing: 'ease-out',
         /*direction: 'alternate-reverse'*/
     };

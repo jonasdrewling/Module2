@@ -15,7 +15,7 @@ const keyframes = [
 ];
 const options = {
     fill: 'forwards',
-    duration: 1000,
+    duration: 500,
     easing: 'ease-out'
 };
 
@@ -31,7 +31,7 @@ function onPointer2Over() {
     ];
     const options = {
         fill: 'forwards',
-        duration: 1000,
+        duration: 500,
         easing: 'ease-out'
     };
 
@@ -47,7 +47,7 @@ function onPointer3Over() {
     ];
     const options = {
         fill: 'forwards',
-        duration: 1000,
+        duration: 500,
         easing: 'ease-out'
     };
 
@@ -63,7 +63,7 @@ function onPointer4Over() {
     ];
     const options = {
         fill: 'forwards',
-        duration: 1000,
+        duration: 500,
         easing: 'ease-out'
     };
 
