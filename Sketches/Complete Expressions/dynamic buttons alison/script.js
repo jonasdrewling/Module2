@@ -15,9 +15,9 @@ function onDocumentReady() {
 function onPointerOver() {
 let el = document.getElementById('pangram');
 const keyframes = [
-    {fontVariationSettings: "'term' 0, 'wght' 0",
+    {fontVariationSettings: "'term' 0, 'wght'",
 letterSpacing: 'inherit'},
-    {fontVariationSettings: "'term' 100, 'wght' 0",
+    {fontVariationSettings: "'term' 100, 'wght'",
 letterSpacing: '30px'}
 ];
 const options = {
@@ -47,9 +47,9 @@ function onPointer2Over() {
 function onPointer3Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
-        {fontVariationSettings: "'term' 100, 'wght' 0",
+        {fontVariationSettings: "'term' 100, 'wght'",
     letterSpacing: '30px'},
-        {fontVariationSettings: "'term' 0, 'wght' 0",
+        {fontVariationSettings: "'term' 0, 'wght'",
     letterSpacing: 'inherit'}
     ];
     const options = {
