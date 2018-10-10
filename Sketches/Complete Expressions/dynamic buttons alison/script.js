@@ -31,6 +31,7 @@ players.push(player);
 }
 
 function onPointer2Over() {
+    console.log('working');
     let el = document.getElementById('pangram');
     const keyframes = [
         {fontSize: '6em'},
@@ -65,8 +66,8 @@ function onPointer4Over() {
     let el = document.getElementById('pangram');
     const keyframes = [
         {fontSize: '6em'},
-        {fontSize: '8em'},
-        {fontSize: '6em'}
+        {fontSize: '2em'}
+        //{fontSize: '6em'}
     ];
     const options = {
         fill: 'forwards',
@@ -111,7 +112,7 @@ function onPointer4Over() {
         {fontStyle: 'italic'}
        /*{ /*fontVariationSettings: "'wght' 50, 'term' 0" },
        { fontVariationSettings: "'wght' 200, 'term' 0" }*/
-   /* ];
+   /*];
     const options = {
        
         //delay: 100,
