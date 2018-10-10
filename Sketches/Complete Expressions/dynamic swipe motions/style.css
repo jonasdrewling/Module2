@@ -1,21 +1,110 @@
 @font-face {
-    font-family: 'Funkis';
-    src: url('../Fonts/FunkisMAUDemoGX.ttf');
-  }
-  
-  html {
-    box-sizing: border-box;
-    height: 100%;
-  }
-  html,
-  body {
-    padding: 0;
-    margin: 1em;
-    height: 100%;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  font-family: 'Funkis';
+  src: url('../Fonts/FunkisMAUDemoGX.ttf');
+}
 
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+html, body {
+  padding: 0;
+  margin: 1em;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ----------GRID DIVS---------- */
+
+.gridDiv1 {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.gridDiv2 {
+  display: grid;
+  grid-template-columns: 5em 5em 5em;
+  grid-template-rows: 5em 5em 5em;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+/* ----------GRID ITEMS---------- */
+
+.gridItemTop {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.gridItemLeft {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.gridItemRight {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.gridItemMiddle {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.gridItemBottom {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.gridItemText {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/* ----------KEYFRAME TRIGGERS---------- */
+
+
+
+/* ----------VARIABLE FONT---------- */
+
+#pangram {
+  text-align: right;
+  font-size: 6em;
+  font-family: 'Funkis';
+  text-rendering: geometricPrecision;
+  /*font-size: 4em;*/
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+}
+
+#pangram2 {
+  text-align: right;
+  font-size: 6em;
+  font-family: 'Funkis';
+  text-rendering: geometricPrecision;
+  /*font-size: 4em;*/
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+}
